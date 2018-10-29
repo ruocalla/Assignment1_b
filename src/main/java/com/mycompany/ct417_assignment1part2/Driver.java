@@ -13,7 +13,7 @@ public class Driver {
     public String Student;
     
     public static void main(String[] args) {
-        //Create Courses
+       //Create Courses
         Course ECE = new Course("ECE");
         Course CSIT = new Course("CSIT");  
         
@@ -98,31 +98,30 @@ public class Driver {
 
         //Print out courses
         System.out.println("Courses : " + ECE.getCourse() + ", " + CSIT.getCourse());
-        
-        //Print out modules specific to course
-        //ECE Modules
-        /*for (CourseModule m: CT417_List){
-        System.out.println("Modules in ECE: ");
-        for(int i = 0; i <= ECE.getModules().size(); i++){
-        System.out.println(ECE.getModules().get(i));
-            }
-        }
-        //CSIT Modules
-        /*System.out.println("Modules in CSIT: ");
-        for(int x = 0; x <= CSIT.getModules().size(); x++){
-        System.out.println(CSIT.getModules().get(x));
-        }*/
 
             for(CourseModule module : ECE.getModules()){
-            System.out.println("Students:" + "\n" + module.getStudents()  );
+            System.out.println("Students in ECE:" + "\n" + module.getStudents()  );
            
             for(Student student : module.getStudents()){
                 System.out.println(student.getName() + student.getUsername() + "\n" + "Modules:");
             for(CourseModule modules : student.getCourseModules()){
                     System.out.println(modules.getModuleName());
-              }        
             }
-        }
+            }
+            }
+                    
+            for(CourseModule module : CSIT.getModules()){
+            System.out.println("Students in CSIT:" + "\n" + module.getStudents()  );
+           
+            for(Student student : module.getStudents()){
+                System.out.println(student.getName() + student.getUsername() + "\n" + "Modules:");
+            for(CourseModule modules : student.getCourseModules()){
+                    System.out.println(modules.getModuleName());
+            }
+            }
+          }
     }
 }
+
+    
 
