@@ -9,7 +9,7 @@
     	<dependency>
 	    <groupId>com.github.ruocalla</groupId>
 	    <artifactId>Assignment1</artifactId>
-	    <version>2564bf842e</version>
+	    <version>4dc96dd545</version>
 	</dependency>
     </dependencies>
     <repositories>

@@ -99,8 +99,7 @@ public class Driver {
         //Print out courses
         System.out.println("Courses : " + ECE.getCourse() + ", " + CSIT.getCourse());
         
-        ArrayList<CourseModule> CT417_List = ECE.getModules();
-        //Print out modules specifi to course
+        //Print out modules specific to course
         //ECE Modules
         /*for (CourseModule m: CT417_List){
         System.out.println("Modules in ECE: ");
